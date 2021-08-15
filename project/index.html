@@ -7,31 +7,27 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-	<p id="text"></p>
-	  
     <div class="main">
       <div class="search">
         <div class="search-title">
           검색할 구역을 클릭하세요.
         </div>
         <div class="search-map">
-          <button id="btn">버튼</button>  
+          <img src="김소은1.jpg" width="400px" height="400px" alt="" id="cover">
       </div>    
     </div>
     <script src="script.js">
-      var btn = document.getElementById("btn");			// 아이디가 "btn"인 요소를 선택함.
-		btn.addEventListener("click", clickBtn);			// 선택한 요소에 click 이벤트 리스너를 등록함.
-		btn.addEventListener("mouseover", mouseoverBtn);	// 선택한 요소에 mouseover 이벤트 리스너를 등록함.
-		btn.addEventListener("mouseout", mouseoutBtn);		// 선택한 요소에 mouseout 이벤트 리스너를 등록함.
-
-		function clickBtn() {
-			document.getElementById("text").innerHTML = "버튼이 클릭됐어요!";
-		}
-		function mouseoverBtn() {
-			document.getElementById("text").innerHTML = "버튼 위에 마우스가 있네요!";
-		}
-		function mouseoutBtn() {
-			document.getElementById("text").innerHTML = "버튼 밖으로 마우스가 나갔어요!";
+     var coverImage=document.querySelector('#cover');
+         coverImage.onclick=function(){
+           alert('눌렀습니다.');
+         }
+         coverImage.onmouseover=function(){
+           coverImage.style.border="5px red solid";
+         }
+         coverImage.onmouseout=function(){
+           coverImage.style.border=null;
+         }
+     })
 		}
     </script>
   </body>
