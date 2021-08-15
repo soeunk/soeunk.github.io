@@ -1,2 +1,36 @@
-<h1>dynamic programming</h1>
-<h3> </h3>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="search">
+        <div class="search-title">
+          검색할 구역을 클릭하세요.
+        </div>
+        <div class="search-map">
+          <button id="btn">버튼</button>  
+      </div>    
+    </div>
+    <script src="script.js">
+      var btn = document.getElementById("btn");			// 아이디가 "btn"인 요소를 선택함.
+		btn.addEventListener("click", clickBtn);			// 선택한 요소에 click 이벤트 리스너를 등록함.
+		btn.addEventListener("mouseover", mouseoverBtn);	// 선택한 요소에 mouseover 이벤트 리스너를 등록함.
+		btn.addEventListener("mouseout", mouseoutBtn);		// 선택한 요소에 mouseout 이벤트 리스너를 등록함.
+
+		function clickBtn() {
+			document.getElementById("text").innerHTML = "버튼이 클릭됐어요!";
+		}
+		function mouseoverBtn() {
+			document.getElementById("text").innerHTML = "버튼 위에 마우스가 있네요!";
+		}
+		function mouseoutBtn() {
+			document.getElementById("text").innerHTML = "버튼 밖으로 마우스가 나갔어요!";
+		}
+    </script>
+  </body>
+</html>
