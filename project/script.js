@@ -26,7 +26,7 @@ var coverImage2=document.querySelector('#cover2');
 
 var coverImage3=document.querySelector('#cover3');
          coverImage3.onclick=function(){
-           alert('눌렀습니다.');
+           alert('공릉역 주변을 검색합니다.');
            
          }
          coverImage3.onmouseover=function(){
