@@ -1,6 +1,6 @@
 var coverImage=document.querySelector('#cover1');
          coverImage.onclick=function(){
-           alert('눌렀습니다.');
+           alert('학교 정문 앞을 검색합니다.');
            
          }
          coverImage.onmouseover=function(){
@@ -13,7 +13,7 @@ var coverImage=document.querySelector('#cover1');
 
 var coverImage2=document.querySelector('#cover2');
          coverImage2.onclick=function(){
-           alert('눌렀습니다.');
+           alert('철길 주변을 검색합니다.');
            
          }
          coverImage2.onmouseover=function(){
