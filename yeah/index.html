@@ -9,8 +9,22 @@
     <meta name="description" content="fullPage plugin by Alvaro Trigo. Pure javascript version of full screen slider." />
     <meta name="keywords" content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple,pure,javascript,slider,hijacking" />
     <meta name="Resource-type" content="Document" />
-
-
+	
+	
+	<script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['First page', 'Second page', 'Third and last page']
+			});
+		});
+		</script>
+	
     <link rel="stylesheet" type="text/css" href="javascript.fullPage.css" />
 
     <style>
@@ -136,7 +150,7 @@
         /* Section 3
          * --------------------------------------- */
         #section2 {
-            background-color: #0094ff;
+            background-color: #a5e4ff;
         }
 
             #section2 h1 {
