@@ -256,16 +256,26 @@
 
     </script>
 
-  		<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['firstPage', 'secondPage', '3rdPage'],
-				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
-				navigation: true,
-				navigationPosition: 'right',
-				navigationTooltips: ['First page', 'Second page', 'Third and last page']
-			});
-		});
+
+			
+			$(document).ready(function(){
+   $('#fullpage').fullpage({
+      //options here
+      licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE', // 라이센스 키
+      autoScrolling:true,
+      scrollHorizontally: true,
+      anchors: ['firstPage', 'secondPage', '3rdPage','4thPage','5thPage'], // 앵커 값
+      sectionsColor: ['#fff', '#fff', '#fff','#fff','#15936f'], // 각 섹션 백그라운드 컬러
+      navigation: true, // 네비게이션 on <-> off
+      navigationPosition: 'right', // 네비 위치
+      navigationTooltips: ['First page', 'Second page', 'Third page', 'Fourth page', 'Fifth page'], // 네비 팁
+      responsiveWidth: 900, // 반응형 전환 값
+      afterResponsive: function(isResponsive){
+      },
+	  body{overflow: hidden};
+    });
+});
+
 	</script>
 
 </body>
