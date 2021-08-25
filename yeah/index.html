@@ -198,7 +198,7 @@
                 <p>'공릉역, 철길, 학교 주변' 세 구역 검색 가능합니다.</p>
             </div>
         </div>
-        <div class="section" id="section1">
+        <div class="section" id="section1" data-anchor="slide1">
             <div class="slide" id="slide1">
                 <div class="content">  
 			<div class="content1"> 
@@ -270,26 +270,25 @@
 	});
 
     </script>
+<script type="text/javascript" src="https://alvarotrigo.com/fullPage/dist/fullpage.dragAndMove2.limited.min.js?v13"></script>
 
-
+<script type="text/javascript" src="https://alvarotrigo.com/fullPage/fullpage.extensions.min.js"></script>
+<script type="text/javascript">
+        new fullpage('#fullpage', {
+            anchors: ['page1', 'page2', 'page3', 'page4'],
+            navigationTooltips: ['fullPage', 'Open', 'Easy', 'Touch'],
+            css3: true,
+            scrollingSpeed: 1000,
+            navigation: true,
+            slidesNavigation: true,
+            responsiveHeight: 330,
+            dragAndMove: true,
+            dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
+            controlArrows: false
+        });
+</script>
 			
-			$(document).ready(function(){
-   $('#fullpage').fullpage({
-      //options here
-      licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE', // 라이센스 키
-      autoScrolling:true,
-      scrollHorizontally: true,
-      anchors: ['firstPage', 'secondPage', '3rdPage','4thPage','5thPage'], // 앵커 값
-      sectionsColor: ['#fff', '#fff', '#fff','#fff','#15936f'], // 각 섹션 백그라운드 컬러
-      navigation: true, // 네비게이션 on <-> off
-      navigationPosition: 'right', // 네비 위치
-      navigationTooltips: ['First page', 'Second page', 'Third page', 'Fourth page', 'Fifth page'], // 네비 팁
-      responsiveWidth: 900, // 반응형 전환 값
-      afterResponsive: function(isResponsive){
-      },
-	  body{overflow: hidden};
-    });
-});
+		
 
 	</script>
 
