@@ -111,9 +111,18 @@
 	    .content1{
 	    position: relative;
             text-align: left;
-            margin : 0 0 0 200px;
+            margin : 10px 0 0 200px;
 		
 	    }
+	    
+        .content2 {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+
+		
+	    
+        }	    
 		    
 
 
@@ -170,6 +179,12 @@
 </head>
 <body>
 
+	<div class="section">
+	<div class="slide" data-anchor="slide1"> Slide 1 </div>
+	<div class="slide" data-anchor="slide2"> Slide 2 </div>
+	<div class="slide" data-anchor="slide3"> Slide 3 </div>
+	<div class="slide" data-anchor="slide4"> Slide 4 </div>
+</div>
 
     <div id="fullpage">
 	    <div class="section" id="section2">
@@ -189,7 +204,7 @@
 			<div class="content1"> 
                     <img src="맵3.png" width="30%">
 			</div>
-			
+			<div class="content2">
 			<h2> 공릉역 주변 </h2>
                     <span id="but"><a href="https://yangsunkyoung.github.io/project/%EC%A0%95%EB%AC%B8%EC%95%9E%20%ED%95%9C%EC%8B%9D.html#">
                        한식</a>
