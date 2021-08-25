@@ -99,10 +99,10 @@
 	span {
             font-size: 2em;
         }   	    
-	span.onmouseover {
+	el.onmouseover {
             font-size: 2em;
         }   
-	span.onmouseout {
+	el.onmouseout {
             font-size: 2em;
         }
 
@@ -183,7 +183,7 @@
 <body>
 
 	<script>
-var el=document.getelementId('#but');
+var el=document.document.querySelector('#but');
 
          el.onmouseover=function(){
            el.style.border="4px red solid";
