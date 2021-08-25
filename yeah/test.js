@@ -1,9 +1,9 @@
-var coverImage=document.querySelector('#but');
+var el=document.getelementId('but');
 
-         coverImage.onmouseover=function(){
-           coverImage.style.border="4px red solid";
+         el.onmouseover=function(){
+           el.style.border="4px red solid";
           
          }
-         coverImage.onmouseout=function(){
-           coverImage.style.border=null;
+         el.onmouseout=function(){
+           el.style.border=null;
          }
