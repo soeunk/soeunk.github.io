@@ -111,14 +111,14 @@
             top: 50%;
             transform: translateY(-50%);
             text-align: center;
-		
+			display:flex;
 	    
         }
 	    .content1{
 	    position: relative;
             text-align: left;
             margin : 30px 0 0 200px;
-	display:flex;
+
 		   
 		
 	    }
@@ -179,6 +179,18 @@
 </head>
 <body>
 
+	<script>
+var el=document.getelementId('but');
+
+         el.onmouseover=function(){
+           el.style.border="4px red solid";
+          
+         }
+         el.onmouseout=function(){
+           el.style.border=null;
+         }
+	</script>
+	
     <div id="fullpage">
 	    <div class="section" id="section2">
             <div class="content">
